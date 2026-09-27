@@ -1,0 +1,43 @@
+# Kaggle Gemma 4 Developer Agent Configuration
+version: "1.0"
+agent_name: "tfd-agent"
+description: "Test-Feedback-Driven Self-Correcting Developer Agent for Gemma 4"
+
+model:
+  name: "gemma-4-31b-it-qat-w4a16-ct"
+  temperature: 0.1
+  top_p: 0.95
+  max_output_tokens: 4096
+  context_window: 262144
+
+lora:
+  adapter_dir: "./lora_adapters"
+  enabled: true
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+execution:
+  max_iterations: 30
+  timeout_seconds: 7200
+  sandbox: "docker"
+  verification_mode: "test_feedback_driven"
+
+tools:
+  - name: "view_file"
+    description: "Inspect code file contents with line numbers"
+  - name: "edit_file"
+    description: "Surgically edit file using unified diff or exact search/replace"
+  - name: "search_code"
+    description: "Ripgrep based code search across repository"
+  - name: "find_files"
+    description: "Locate files matching glob pattern"
+  - name: "run_bash"
+    description: "Execute sandboxed terminal commands, run tests, and capture stdout/stderr"
+  - name: "create_reproducer"
+    description: "Synthesize and execute a minimal failing reproducer script"
