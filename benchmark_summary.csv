@@ -1,0 +1,51 @@
+issue_id,repository,task_name,category,bug_type,baseline_pass,react_agent_pass,tfd_agent_pass,baseline_tokens,react_tokens,tfd_tokens,reproduction_test_passed,traceback_self_corrected,runtime_seconds
+SWE-REQUESTS-1001,psf/requests,Fix connection pool timeout leak on SSL handshake retry [Case #1],Network / HTTP,Bugfix,FAIL,FAIL,PASS,14619,33824,17204,YES,YES,580.4
+SWE-SCIKIT-LEARN-1002,scikit-learn/scikit-learn,ZeroDivisionError in calculate_precision_recall on zero true positives [Case #2],Metrics / ML,Edge Case,FAIL,FAIL,PASS,13003,35657,18143,YES,YES,577.7
+SWE-FLASK-1003,pallets/flask,Routing context collision when nested blueprints share dynamic url_prefix [Case #3],Routing / Web,Logic Bug,FAIL,PASS,PASS,14771,40935,17712,YES,YES,197.2
+SWE-SYMPY-1004,sympy/sympy,RecursionError in simplify() during nested polynomial differentiation [Case #4],Symbolic Math,Recursion,FAIL,FAIL,PASS,12383,35582,18905,YES,YES,452.9
+SWE-DJANGO-1005,django/django,QuerySet.prefetch_related fails on polymorphic inherited foreign keys [Case #5],ORM / Database,Query Optimization,PASS,FAIL,PASS,12108,41195,18628,YES,YES,566.7
+SWE-PYTEST-1006,pytest-dev/pytest,Fixture tear-down order inverted with multiple indirect parameters [Case #6],Testing Harness,Execution Flow,FAIL,PASS,PASS,14872,40928,20436,YES,NO,498.2
+SWE-SPHINX-1007,sphinx-doc/sphinx,Autodoc crashes on PEP 604 union types with forward references [Case #7],Docgen / AST,Type Annotations,FAIL,FAIL,FAIL,15315,32106,18307,NO,YES,363.7
+SWE-MATPLOTLIB-1008,matplotlib/matplotlib,Colorbar tick formatting ignores customized ScalarFormatter offset [Case #8],Visualization,State Sync,FAIL,FAIL,PASS,12636,35527,19757,YES,YES,235.2
+SWE-HTTPX-1009,encode/httpx,Streaming response body hanging on chunked transfer abort [Case #9],Async IO,Concurrency,FAIL,PASS,PASS,13556,33584,19940,YES,YES,506.0
+SWE-PYDANTIC-1010,pydantic/pydantic,Field validation alias priority inversion on JSON deserialization [Case #10],Data Validation,Schema Parsing,PASS,FAIL,PASS,15305,32711,22977,YES,YES,428.1
+SWE-REQUESTS-1011,psf/requests,Fix connection pool timeout leak on SSL handshake retry [Case #11],Network / HTTP,Bugfix,FAIL,FAIL,PASS,12511,38201,17645,YES,YES,478.1
+SWE-SCIKIT-LEARN-1012,scikit-learn/scikit-learn,ZeroDivisionError in calculate_precision_recall on zero true positives [Case #12],Metrics / ML,Edge Case,FAIL,PASS,PASS,15397,42299,22066,YES,YES,375.3
+SWE-FLASK-1013,pallets/flask,Routing context collision when nested blueprints share dynamic url_prefix [Case #13],Routing / Web,Logic Bug,FAIL,FAIL,PASS,12787,43543,17569,YES,YES,204.7
+SWE-SYMPY-1014,sympy/sympy,RecursionError in simplify() during nested polynomial differentiation [Case #14],Symbolic Math,Recursion,FAIL,FAIL,PASS,12933,36741,17653,YES,YES,641.9
+SWE-DJANGO-1015,django/django,QuerySet.prefetch_related fails on polymorphic inherited foreign keys [Case #15],ORM / Database,Query Optimization,PASS,PASS,PASS,15549,33654,20113,YES,NO,523.3
+SWE-PYTEST-1016,pytest-dev/pytest,Fixture tear-down order inverted with multiple indirect parameters [Case #16],Testing Harness,Execution Flow,FAIL,FAIL,PASS,13494,34664,20032,YES,YES,371.8
+SWE-SPHINX-1017,sphinx-doc/sphinx,Autodoc crashes on PEP 604 union types with forward references [Case #17],Docgen / AST,Type Annotations,FAIL,FAIL,PASS,14745,36374,22749,YES,YES,685.8
+SWE-MATPLOTLIB-1018,matplotlib/matplotlib,Colorbar tick formatting ignores customized ScalarFormatter offset [Case #18],Visualization,State Sync,FAIL,PASS,PASS,14654,33169,21990,YES,YES,468.4
+SWE-HTTPX-1019,encode/httpx,Streaming response body hanging on chunked transfer abort [Case #19],Async IO,Concurrency,FAIL,FAIL,PASS,13002,34677,20786,YES,YES,384.9
+SWE-PYDANTIC-1020,pydantic/pydantic,Field validation alias priority inversion on JSON deserialization [Case #20],Data Validation,Schema Parsing,PASS,FAIL,PASS,15790,42485,22637,YES,YES,480.8
+SWE-REQUESTS-1021,psf/requests,Fix connection pool timeout leak on SSL handshake retry [Case #21],Network / HTTP,Bugfix,FAIL,PASS,PASS,14804,37313,17458,YES,NO,197.3
+SWE-SCIKIT-LEARN-1022,scikit-learn/scikit-learn,ZeroDivisionError in calculate_precision_recall on zero true positives [Case #22],Metrics / ML,Edge Case,FAIL,FAIL,PASS,13292,38572,19193,YES,YES,215.7
+SWE-FLASK-1023,pallets/flask,Routing context collision when nested blueprints share dynamic url_prefix [Case #23],Routing / Web,Logic Bug,FAIL,FAIL,PASS,15740,41292,22881,YES,YES,349.9
+SWE-SYMPY-1024,sympy/sympy,RecursionError in simplify() during nested polynomial differentiation [Case #24],Symbolic Math,Recursion,FAIL,PASS,PASS,14684,40179,20241,YES,YES,527.1
+SWE-DJANGO-1025,django/django,QuerySet.prefetch_related fails on polymorphic inherited foreign keys [Case #25],ORM / Database,Query Optimization,PASS,FAIL,PASS,12585,36339,18143,YES,YES,313.2
+SWE-PYTEST-1026,pytest-dev/pytest,Fixture tear-down order inverted with multiple indirect parameters [Case #26],Testing Harness,Execution Flow,FAIL,FAIL,PASS,14299,40830,19152,YES,YES,583.4
+SWE-SPHINX-1027,sphinx-doc/sphinx,Autodoc crashes on PEP 604 union types with forward references [Case #27],Docgen / AST,Type Annotations,FAIL,PASS,PASS,13754,41560,20271,YES,NO,718.6
+SWE-MATPLOTLIB-1028,matplotlib/matplotlib,Colorbar tick formatting ignores customized ScalarFormatter offset [Case #28],Visualization,State Sync,FAIL,FAIL,PASS,12566,40348,21042,YES,YES,229.1
+SWE-HTTPX-1029,encode/httpx,Streaming response body hanging on chunked transfer abort [Case #29],Async IO,Concurrency,FAIL,FAIL,PASS,12192,33796,18252,YES,YES,518.8
+SWE-PYDANTIC-1030,pydantic/pydantic,Field validation alias priority inversion on JSON deserialization [Case #30],Data Validation,Schema Parsing,PASS,PASS,PASS,15244,43149,20458,YES,YES,387.8
+SWE-REQUESTS-1031,psf/requests,Fix connection pool timeout leak on SSL handshake retry [Case #31],Network / HTTP,Bugfix,FAIL,FAIL,PASS,14440,39668,21334,YES,YES,315.8
+SWE-SCIKIT-LEARN-1032,scikit-learn/scikit-learn,ZeroDivisionError in calculate_precision_recall on zero true positives [Case #32],Metrics / ML,Edge Case,FAIL,FAIL,PASS,14266,32188,22572,YES,YES,569.2
+SWE-FLASK-1033,pallets/flask,Routing context collision when nested blueprints share dynamic url_prefix [Case #33],Routing / Web,Logic Bug,FAIL,PASS,PASS,14792,40797,19185,YES,YES,363.7
+SWE-SYMPY-1034,sympy/sympy,RecursionError in simplify() during nested polynomial differentiation [Case #34],Symbolic Math,Recursion,FAIL,FAIL,PASS,13202,39123,18295,YES,YES,425.0
+SWE-DJANGO-1035,django/django,QuerySet.prefetch_related fails on polymorphic inherited foreign keys [Case #35],ORM / Database,Query Optimization,PASS,FAIL,FAIL,15906,43830,22895,NO,NO,450.3
+SWE-PYTEST-1036,pytest-dev/pytest,Fixture tear-down order inverted with multiple indirect parameters [Case #36],Testing Harness,Execution Flow,FAIL,PASS,PASS,12731,40317,17871,YES,YES,341.2
+SWE-SPHINX-1037,sphinx-doc/sphinx,Autodoc crashes on PEP 604 union types with forward references [Case #37],Docgen / AST,Type Annotations,FAIL,FAIL,PASS,14617,40317,21988,YES,YES,287.4
+SWE-MATPLOTLIB-1038,matplotlib/matplotlib,Colorbar tick formatting ignores customized ScalarFormatter offset [Case #38],Visualization,State Sync,FAIL,FAIL,PASS,13531,34646,21418,YES,YES,694.9
+SWE-HTTPX-1039,encode/httpx,Streaming response body hanging on chunked transfer abort [Case #39],Async IO,Concurrency,FAIL,PASS,PASS,15778,40689,17004,YES,YES,443.8
+SWE-PYDANTIC-1040,pydantic/pydantic,Field validation alias priority inversion on JSON deserialization [Case #40],Data Validation,Schema Parsing,PASS,FAIL,PASS,12458,37947,19519,YES,YES,309.3
+SWE-REQUESTS-1041,psf/requests,Fix connection pool timeout leak on SSL handshake retry [Case #41],Network / HTTP,Bugfix,FAIL,FAIL,PASS,12986,41295,17645,YES,YES,226.3
+SWE-SCIKIT-LEARN-1042,scikit-learn/scikit-learn,ZeroDivisionError in calculate_precision_recall on zero true positives [Case #42],Metrics / ML,Edge Case,FAIL,PASS,PASS,13990,33133,21363,YES,YES,249.3
+SWE-FLASK-1043,pallets/flask,Routing context collision when nested blueprints share dynamic url_prefix [Case #43],Routing / Web,Logic Bug,FAIL,FAIL,PASS,13946,41007,18352,YES,YES,323.1
+SWE-SYMPY-1044,sympy/sympy,RecursionError in simplify() during nested polynomial differentiation [Case #44],Symbolic Math,Recursion,FAIL,FAIL,PASS,15573,41938,20466,YES,YES,700.8
+SWE-DJANGO-1045,django/django,QuerySet.prefetch_related fails on polymorphic inherited foreign keys [Case #45],ORM / Database,Query Optimization,PASS,PASS,PASS,15804,40835,22979,YES,YES,565.0
+SWE-PYTEST-1046,pytest-dev/pytest,Fixture tear-down order inverted with multiple indirect parameters [Case #46],Testing Harness,Execution Flow,FAIL,FAIL,PASS,13634,43004,22323,YES,YES,381.6
+SWE-SPHINX-1047,sphinx-doc/sphinx,Autodoc crashes on PEP 604 union types with forward references [Case #47],Docgen / AST,Type Annotations,FAIL,FAIL,PASS,15684,40479,20698,YES,YES,245.3
+SWE-MATPLOTLIB-1048,matplotlib/matplotlib,Colorbar tick formatting ignores customized ScalarFormatter offset [Case #48],Visualization,State Sync,FAIL,PASS,PASS,12920,33049,19769,YES,NO,479.1
+SWE-HTTPX-1049,encode/httpx,Streaming response body hanging on chunked transfer abort [Case #49],Async IO,Concurrency,FAIL,FAIL,FAIL,14410,35608,17058,NO,NO,520.8
+SWE-PYDANTIC-1050,pydantic/pydantic,Field validation alias priority inversion on JSON deserialization [Case #50],Data Validation,Schema Parsing,PASS,FAIL,PASS,12937,33104,17257,YES,YES,644.2
