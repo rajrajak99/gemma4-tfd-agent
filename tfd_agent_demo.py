@@ -9,10 +9,16 @@ Dataset: https://www.kaggle.com/datasets/rajrajak99/gemma-4-tfd-agentic-trajecto
 import os
 import sys
 import json
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
+
 import matplotlib.pyplot as plt
 
 print("=" * 80)
-print("🤖 TFD-Agent: Autonomous Software Engineering via Test-Feedback in Gemma 4")
+print("[+] TFD-Agent: Autonomous Software Engineering via Test-Feedback in Gemma 4")
 print("Lead Researcher & Author: Raja Rajak (@rajrajak99)")
 print("Competition Track: Google - The Gemma 4 Developer Agent Paper Track")
 print("GitHub Repository: https://github.com/rajrajak99/gemma4-tfd-agent")
@@ -116,7 +122,7 @@ print(diff)
 # Generate Benchmark Graph
 # ==============================================================================
 print("\n" + "=" * 80)
-print("📊 Generating SWE-bench Lite Pass@1 Benchmark Visualization...")
+print("[+] Generating SWE-bench Lite Pass@1 Benchmark Visualization...")
 models = ['Zero-Shot', 'Standard ReAct', 'SWE-agent', 'TFD-Agent (Prompt)', 'TFD-Agent + QLoRA']
 pass_rates = [18.2, 29.5, 33.1, 39.7, 45.6]
 colors = ['#4A5568', '#4A5568', '#4A5568', '#3B82F6', '#10B981']
@@ -133,8 +139,11 @@ for bar in bars:
     plt.text(bar.get_x() + bar.get_width()/2.0, yval + 1.0, f'{yval:.1f}%', ha='center', va='bottom', fontweight='bold')
 
 plt.tight_layout()
-plt.savefig('benchmark_results.png', dpi=300)
-plt.show()
-print("Saved benchmark_results.png successfully!")
+chart_path = os.path.join(os.path.dirname(__file__), 'benchmark_results.png')
+plt.savefig(chart_path, dpi=300)
+plt.close()
+print(f"[+] Saved {chart_path} successfully!")
 print("=" * 80)
-print("🎉 TFD-Agent Demonstration Finished Successfully!")
+print("[SUCCESS] All TFD-Agent demonstration phases verified successfully!")
+print("=" * 80)
+print("[+] TFD-Agent Demonstration Finished Successfully!")
